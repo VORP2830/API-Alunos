@@ -15,7 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseMySql(mySqlConnection,
                 ServerVersion.AutoDetect(mySqlConnection)));
 
-builder.Services.AddScoped<IAlunoService, IAlunoService>();
+builder.Services.AddScoped<IAlunoService, AlunosService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
